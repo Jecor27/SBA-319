@@ -13,7 +13,6 @@ const FoodSchema = new Schema({
     instructions: { type: String, required: true }
 });
 
-// FoodSchema.index({ createdAt: -1 }); //sorting by newest drinks
-// FoodSchema.index({ category: 1 }); //filtering by category
+FoodSchema.index({ name: 1 });
 
 export default mongoose.model('Food', FoodSchema);
