@@ -51,20 +51,24 @@
     "comment": "This was an amazing dish!"
 }
 
-| add request to drink collection | 
-{
-    "name": "Mojito",
-    "ingredients": [
-        { "name": "White Rum", "amount": "2 oz" },
-        { "name": "Lime Juice", "amount": "1 oz" },
-        { "name": "Mint Leaves", "amount": "10" },
-        { "name": "Soda Water", "amount": "2 oz" }
-    ],
-    "instructions": "Muddle mint leaves and lime juice, add rum and soda water. Serve over ice.",
-    "category": "Cocktail",
-    "alcoholContent": true,
-    "glassType": "Highball"
-}
+### **1️⃣ Add a Drink Request (`POST /drinks`)**
+| Action | Instructions |
+|--------|-------------|
+| **Add a Drink to the Collection** | When using **Thunder Client**, click **Body → JSON**, then enter:  <br><br> ```json  
+{  
+    "name": "Mojito",  
+    "ingredients": [  
+        { "name": "White Rum", "amount": "2 oz" },  
+        { "name": "Lime Juice", "amount": "1 oz" },  
+        { "name": "Mint Leaves", "amount": "10 leaves" },  
+        { "name": "Soda Water", "amount": "2 oz" }  
+    ],  
+    "instructions": "Muddle mint leaves and lime juice, add rum and soda water. Serve over ice.",  
+    "category": "Cocktail",  
+    "alcoholContent": true,  
+    "glassType": "Highball"  
+}  
+``` |
 
 
 
