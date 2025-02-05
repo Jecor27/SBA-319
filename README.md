@@ -47,28 +47,28 @@
     ],
     "instructions": "Boil pasta, cook chicken, mix with Alfredo sauce."
 }
-``` |
+
 
 ### **1️⃣ Add a review Request (`POST /reviews`)**
 | Action | Instructions |
 |--------|-------------|
 | **Add a review to the Collection** | When using **Thunder Client**, click **Body → JSON**, then enter:  <br><br> 
 
-```json  
+ 
 {
     "drink": "{id of drink document that was added}",
     "food": "{id of food document that was added}",
     "rating": 5,
     "comment": "This was an amazing dish!"
 }
-``` |
+
 
 ### **1️⃣ Add a Drink Request (`POST /drinks`)**
 | Action | Instructions |
 |--------|-------------|
 | **Add a Drink to the Collection** | When using **Thunder Client**, click **Body → JSON**, then enter:  <br><br> 
 
-```json  
+ 
 {  
     "name": "Mojito",  
     "ingredients": [  
