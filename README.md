@@ -32,7 +32,10 @@
 
 ---
 ## 📌 Example Requests
-| add request to food collection | when using something like thunder client = Click Body → JSON, then enter
+### **1️⃣ Add a Drink Request (`POST /foods`)**
+| Action | Instructions |
+|--------|-------------|
+| **Add a food to the Collection** | When using **Thunder Client**, click **Body → JSON**, then enter:  <br><br> ```json  
 {
     "name": "Chicken Alfredo",
     "ingredients": [
@@ -43,7 +46,10 @@
     "instructions": "Boil pasta, cook chicken, mix with Alfredo sauce."
 }
 
-| add request to food collection | 
+### **1️⃣ Add a Drink Request (`POST /reviews`)**
+| Action | Instructions |
+|--------|-------------|
+| **Add a review to the Collection** | When using **Thunder Client**, click **Body → JSON**, then enter:  <br><br> ```json  
 {
     "drink": "{id of drink document that was added}",
     "food": "{id of food document that was added}",
@@ -70,6 +76,6 @@
 }  
 ``` |
 
-
+|-----------|
 
 ![alt text](./imgs4RDME/image.png)# SBA-319
