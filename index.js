@@ -3,6 +3,7 @@ import express from 'express'
 import mongoose from 'mongoose'
 import foodRoutes from "./routes/foodRoutes.js"
 import drinkRoutes from "./routes/drinkRoutes.js"
+import reviewRoutes from "./routes/reviewRoutes.js"
 import dotenv from 'dotenv';
 import connectDB from './db.js'
 
@@ -24,6 +25,7 @@ app.use((req, res, next) => {
 // app.use('/foods', foodRoutes);
 app.use('/foods', foodRoutes);
 app.use('/drinks', drinkRoutes);
+app.use('/reviews', reviewRoutes);
 
 
 // connect to DB and port listening
