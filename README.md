@@ -82,8 +82,6 @@
     "alcoholContent": true,  
     "glassType": "Highball"  
 }  
-``` |
 
-|-----------|
 
 ![alt text](./imgs4RDME/image.png)
