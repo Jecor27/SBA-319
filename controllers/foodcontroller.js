@@ -6,6 +6,7 @@ import Food from "../models/food.js"
 const getAllFoods = async (req, res) => {
     try{
         const foods = await Food.find()
+        console.log('food retreived', foods)
         res.json(foods);
     }catch (error){
         res.status(500).json({error: 'Failed to grab food'})
@@ -16,6 +17,7 @@ const createFood = async (req, res) => {
     try{
         const newFood = new Food(req.body);
         await newFood.save();
+        console.log('food saved', newFood)
         res.status(201).json(newFood)
     }catch (error){
         res.status(500).json({error: 'Failed to add foods'})
@@ -25,6 +27,7 @@ const createFood = async (req, res) => {
 const updateFood = async (req, res) => {
     try {
         const updatedFood = await Food.findByIdAndUpdate(req.params.id, req.body, { new: true });
+        console.log('food updated', updatedFood)
         res.json(updatedFood);
     } catch (error) {
         res.status(500).json({ error: 'Failed to update the food' });
