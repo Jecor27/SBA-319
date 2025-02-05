@@ -1,7 +1,7 @@
 import Review from '../models/Reviews.js';
 
 const getAllReviews = async (req, res) => {
-    const reviews = await Review.find().populate('user').populate('food');
+    const reviews = await Review.find().populate('drink').populate('food');
     console.log('Reviews retrieved', reviews)
     res.json(reviews);
 };
