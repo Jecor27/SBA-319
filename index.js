@@ -2,6 +2,7 @@ import express from 'express'
 //import bodyParser from 'body-parser'
 import mongoose from 'mongoose'
 import foodRoutes from "./routes/foodRoutes.js"
+import drinkRoutes from "./routes/drinkRoutes.js"
 import dotenv from 'dotenv';
 import connectDB from './db.js'
 
@@ -22,6 +23,7 @@ app.use((req, res, next) => {
 // app.use('/drinks', drinkRoutes)
 // app.use('/foods', foodRoutes);
 app.use('/foods', foodRoutes);
+app.use('/drinks', drinkRoutes);
 
 
 // connect to DB and port listening
